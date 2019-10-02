@@ -31,7 +31,7 @@ export default class App extends React.Component {
           {
             (HasUpper) => {
               return (
-                <p className={HasUpper != "Weak" ? "danger" : undefined}>
+                <p className={HasUpper !== "Weak" ? "danger" : undefined}>
                   {HasUpper}
                 </p>
               );

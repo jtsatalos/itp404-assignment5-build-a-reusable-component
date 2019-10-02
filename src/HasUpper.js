@@ -1,17 +1,17 @@
-import React from 'react';
+// import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function HasUpper(props) {
   const { text, children } = props;
   let isUpper = false;
-  if(text.toLowerCase()==text)
+  if(text.toLowerCase()===text)
   {
     isUpper = false;
   }
   else {
     isUpper = true;
   }
-  if(text.length == 0)
+  if(text.length === 0)
   {
     return "";
   }
@@ -19,7 +19,7 @@ export default function HasUpper(props) {
   {
     return children(isUpper)
   }
-  else if(text.toLowerCase()==text)
+  else if(text.toLowerCase()===text)
   {
     return "Weak";
   }
